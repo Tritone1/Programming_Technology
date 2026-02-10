@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2025-10-07T12:00:00.000Z" agent="GitHub Copilot" etag="U_kgDOB_..." version="21.x.x" type="device">
+  <diagram name="Page-1" id="C4_1-2-3-4-5">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="shape-class" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Shape&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;# centerX: double&lt;br&gt;# centerY: double&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Shape(centerX: double, centerY: double)&lt;br&gt;+ getCenterX(): double&lt;br&gt;+ getCenterY(): double&lt;br&gt;+ toString(): String&lt;br&gt;&lt;i&gt;+ getMinX(): double&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ getMaxX(): double&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ getMinY(): double&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ getMaxY(): double&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ getType(): String&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ getSize(): double&lt;/i&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="40" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="circle-class" value="&lt;b&gt;Circle&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;- radius: double&lt;hr size=&quot;1&quot;&gt;+ Circle(centerX: double, centerY: double, radius: double)&lt;br&gt;+ getMinX(): double&lt;br&gt;+ getMaxX(): double&lt;br&gt;+ getMinY(): double&lt;br&gt;+ getMaxY(): double&lt;br&gt;+ getType(): String&lt;br&gt;+ getSize(): double" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="square-class" value="&lt;b&gt;Square&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;- side: double&lt;hr size=&quot;1&quot;&gt;+ Square(centerX: double, centerY: double, side: double)&lt;br&gt;+ getMinX(): double&lt;br&gt;+ getMaxX(): double&lt;br&gt;+ getMinY(): double&lt;br&gt;+ getMaxY(): double&lt;br&gt;+ getType(): String&lt;br&gt;+ getSize(): double" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="320" y="400" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="triangle-class" value="&lt;b&gt;RegularTriangle&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;- side: double&lt;hr size=&quot;1&quot;&gt;+ RegularTriangle(centerX: double, centerY: double, side: double)&lt;br&gt;+ getMinX(): double&lt;br&gt;+ getMaxX(): double&lt;br&gt;+ getMinY(): double&lt;br&gt;+ getMaxY(): double&lt;br&gt;+ getType(): String&lt;br&gt;+ getSize(): double" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hexagon-class" value="&lt;b&gt;RegularHexagon&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;- side: double&lt;hr size=&quot;1&quot;&gt;+ RegularHexagon(centerX: double, centerY: double, side: double)&lt;br&gt;+ getMinX(): double&lt;br&gt;+ getMaxX(): double&lt;br&gt;+ getMinY(): double&lt;br&gt;+ getMaxY(): double&lt;br&gt;+ getType(): String&lt;br&gt;+ getSize(): double" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="320" y="600" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="main-class" value="&lt;b&gt;Main&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;+ &lt;u&gt;main(args: String[]): void&lt;/u&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="920" y="40" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="loader-class" value="&lt;b&gt;ShapeLoader&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;+ &lt;u&gt;loadShapes(filename: String): List&amp;lt;Shape&amp;gt;&lt;/u&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="920" y="160" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="exception-class" value="&lt;div style=&quot;text-align: center;&quot;&gt;&amp;lt;&amp;lt;Exception&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;InvalidShapeException&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;hr size=&quot;1&quot;&gt;+ InvalidShapeException(message: String)&lt;br&gt;+ InvalidShapeException(message: String, cause: Throwable)" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="920" y="280" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-circle-shape" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;startArrow=none;startFill=0;endSize=8;whiteSpace=wrap;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="circle-class" target="shape-class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-square-shape" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;startArrow=none;startFill=0;endSize=8;whiteSpace=wrap;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="square-class" target="shape-class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-triangle-shape" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;startArrow=none;startFill=0;endSize=8;whiteSpace=wrap;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="triangle-class" target="shape-class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-hexagon-shape" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;startArrow=none;startFill=0;endSize=8;whiteSpace=wrap;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hexagon-class" target="shape-class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-main-loader" value="&amp;lt;&amp;lt;uses&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="main-class" target="loader-class">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="800" y="120" as="sourcePoint" />
+            <mxPoint x="960" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-main-shape" value="&amp;lt;&amp;lt;uses&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;align=center;verticalAlign=middle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="main-class" target="shape-class">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="800" y="200" as="sourcePoint" />
+            <mxPoint x="960" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-loader-shape" value="&amp;lt;&amp;lt;creates&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;align=center;verticalAlign=middle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="loader-class" target="shape-class">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="800" y="280" as="sourcePoint" />
+            <mxPoint x="960" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-loader-exception" value="&amp;lt;&amp;lt;throws&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="loader-class" target="exception-class">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="800" y="360" as="sourcePoint" />
+            <mxPoint x="960" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
